@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Дизайн-студия «Нёрдс» | Магазин готовых шаблонов</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="main-navigation header__main-navigation container">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <img class="logo__img" src="img/svg/nerds-logo.svg" alt="Логотип дизайн-студии «Нёрдс»" width="160" height="65">
+      </a>
+
+      <!-- Main menu -->       
+      <ul class="menu reset-list header__menu">
+        <li class="menu__item">
+          <a href="index.html" class="menu__link">Студия</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Клиенты</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link menu__link_current">Магазин</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Контакты</a>
+        </li>
+      </ul>
+
+      <!-- User menu -->
+      <ul class="menu reset-list header__menu header__menu_m-left">
+        <li class="menu__item">
+          <a href="#" class="menu__link menu__link_cart">Корзина</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+
+    <!-- Title -->
+    <h1 class="title main__title">Магазин готовых шаблонов</h1>
+    <div class="main-wrapper container">
+
+      <!-- Filter -->
+      <section class="filter main__filter">
+        <h2 class="visually-hidden">Подбор шаблона по параметрам</h2>
+        <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
+
+          <!-- Расчет стоимости -->
+          <fieldset class="selection">
+            <legend class="selection__name">Стоимость:</legend>
+            <div class="range">       
+              <div class="range__controls">
+                <div class="range__scale">
+                  <div class="range__bar"></div>
+                </div>
+                <div class="range__toggle range__toggle_min"><span class="visually-hidden">стоимость от</span></div>
+                <div class="range__toggle range__toggle_max"><span class="visually-hidden">стоимость до</span></div>
+              </div>
+            </div>
+        
+            <div class="controls">
+              <label class="controls__label">От<input class="controls__input" type="number" name="min-price" value="0"></label>
+              <label class="controls__label">До<input class="controls__input" type="number" name="max-price" value="15000"></label>
+            </div>
+          </fieldset>
+
+          <!-- Форма выбора типа сетки -->
+          <fieldset class="selection selection_margin-grid">
+            <legend class="selection__name">Сетка:</legend>
+            <ul class="selection__list reset-list">
+              <li class="selector">
+                <input class="selector__input visually-hidden" id="adaptive" type="radio" name="grid" value="adaptive" checked>
+                <label class="selector__label selector__label_radio" for="adaptive">Адаптивная</label>
+              </li>
+              <li class="selector">
+                <input class="selector__input visually-hidden" id="fixed" type="radio" name="grid" value="fixed">
+                <label class="selector__label selector__label_radio" for="fixed">Фиксированная</label>
+              </li>
+              <li class="selector">
+                <input class="selector__input visually-hidden" id="fluid" type="radio" name="grid" value="fluid" disabled>
+                <label class="selector__label selector__label_radio" for="fluid">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <!-- Форма выбора особенностей макета -->
+          <fieldset class="selection selection_margin-features">
+            <legend class="selection__name">Особенности:</legend>
+            <ul class="selection__list reset-list">
+              <li class="selector">
+                <input class="selector__input visually-hidden" id="slider" type="checkbox" name="feature-1" value="slider" checked>
+                <label class="selector__label selector__label_checkbox" for="slider">Слайдер</label>
+              </li>
+              <li class="selector">
+                <input class="selector__input visually-hidden" id="advantages-block" type="checkbox" name="feature-2" value="advantages-block">
+                <label class="selector__label selector__label_checkbox" for="advantages-block">Блок преимуществ</label>
+              </li>
+              <li class="selector">
+                <input class="selector__input visually-hidden" id="news" type="checkbox" name="feature-3" value="news" checked>
+                <label class="selector__label selector__label_checkbox" for="news">Новости</label>
+              </li>
+              <li class="selector">
+                <input class="selector__input visually-hidden" id="news" type="checkbox" name="feature-4" value="gallery">
+                <label class="selector__label selector__label_checkbox" for="gallery">Галерея</label>
+              </li>
+              <li class="selector">
+                <input class="selector__input visually-hidden" id="cart" type="checkbox" name="feature-5" value="cart" disabled>
+                <label class="selector__label selector__label_checkbox" for="cart">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button button_grey filter-form__button" type="submit">Показать</button>
+        </form>
+      </section>
+
+      <!-- Catalog -->
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог шаблонов</h2>
+        
+        <!-- Сортировка -->
+        <div class="sorting">
+          <p class="sorting__name">Сортировать:</p>
+          <ul class="sorting__list reset-list">
+            <li class="sorting__item"><a class="sorting__link sorting__link_current">По цене</a></li>
+            <li class="sorting__item"><a href="#"class="sorting__link">По типу</a></li>
+            <li class="sorting__item"><a href="#"class="sorting__link">По названию</a></li>
+          </ul>
+          <ul class="sorting__direction reset-list">
+            <li class="sorting__item sorting__item_direction"><a class="sorting__link link-direction sorting__link_current"><span class="visually-hidden">По убыванию</span></a></li>
+            <li class="sorting__item"><a class="sorting__link link-direction link-direction_up"><span class="visually-hidden">По возрастанию</span></a></li> 
+          </ul>
+        </div>
+
+        <!-- Шаблоны сайтов -->
+        <ul class="catalog__list reset-list">
+          <li class="catalog__item">
+            <img class="catalog__img" src="img/catalog/sedona.jpg" alt="Скриншот сайта Sedona" width="360" height="576">
+            <div class="description">
+              <h3 class="description__title"><a href="#" class="description__link">Sedona</a></h3>
+              <p class="description__text">Информационный сайт для туристов</p>
+              <a href="#" class="button description__button">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__img" src="img/catalog/pink.jpg" alt="Скриншот сайта Pink App" width="360" height="576">
+            <div class="description">
+              <h3 class="description__title"><a href="#" class="description__link">Pink App</a></h3>
+              <p class="description__text">Продуктовый лендинг приложения для iOS и Android</p>
+              <a href="#" class="button description__button">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__img" src="img/catalog/barbershop.jpg" alt="Скриншот сайта Barbershop" width="360" height="576">
+            <div class="description">
+              <h3 class="description__title"><a href="#" class="description__link">Barbershop</a></h3>
+              <p class="description__text">Сайт салона красоты. Для мужчин, да.</p>
+              <a href="#" class="button description__button">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__img" src="img/catalog/mishka.jpg" alt="Скриншот сайта Mishka" width="360" height="576">
+            <div class="description">
+              <h3 class="description__title"><a href="#" class="description__link">Mishka</a></h3>
+              <p class="description__text">Интернет-магазин вязаных игрушек</p>
+              <a href="#" class="button description__button">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__img" src="img/catalog/aplus.jpg" alt="Скриншот сайта A Plus" width="360" height="576">
+            <div class="description">
+              <h3 class="description__title"><a href="#" class="description__link">A Plus</a></h3>
+              <p class="description__text">Лендинг курсов повышения квалификации</p>
+              <a href="#" class="button description__button">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__img" src="img/catalog/kvast.jpg" alt="Скриншот сайта Кваст" width="360" height="576">
+            <div class="description">
+              <h3 class="description__title"><a href="#" class="description__link">Кваст</a></h3>
+              <p class="description__text">Промо-сайт производителя крафтового кваса</p>
+              <a href="#" class="button description__button">9 900 руб.</a>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Pagination -->
+        <ul class="pagination reset-list catalog__pagination">
+          <li class="pagination__item"><a href="#" class="pagination__link pagination__link_current">1</a></li>
+          <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+          <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+          <li class="pagination__item"><a href="#" class="pagination__link pagination__link_next">Следующая</a></li>
+        </ul>
+      </section>
+    </div>
+    
+    <!-- Contacts -->
+    <section class="contacts main__contacts main__contacts_margin">
+      <h2 class="visually-hidden">Контакты</h2>
+      <iframe class="contacts__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Abc49cb12c9aac106fd90b016b27f8deedd8b277e3da57831f5dc3842c2cd058d&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>
+      <img class="visually-hidden" src="img/map.png" alt="Дизайн-студия NЁRDS расположена по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
+      
+      <div class="contacts__wrapper">
+        <div class="contacts__info">
+          <p class="contacts__title">NЁRDS DESIGN STUDIO</p>
+          <address class="contacts__address">
+            191186, Санкт-Петербург,<br> 
+            ул. Б. Конюшенная, д. 19/8
+            <p class="contacts__phone">тел. <a class="phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p> 
+            <a href="#" class="button contacts__button">Напишите нам</a>
+          </address>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer container">
+    <section class="socials footer__socials"> 
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <ul class="socials__list reset-list">
+        <li class="socials__item">
+          <a class="socials__link socials__link_vk" href="#" aria-label="ВКонтакте"></a> 
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link_fb" href="#" aria-label="Facebook"></a> 
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link_insta" href="#" aria-label="Instagram"></a> 
+        </li>
+      </ul>
+      <div class="socials__info">
+        <p class="socials__text">Давайте дружить, это выгодно!</p>
+        <p class="socials__desc">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </section>
+  </footer>
+
+  <!-- Modal -->
+  <section class="modal">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <form class="write" method="post" action="https://echo.htmlacademy.ru">
+      <fieldset class="write__fieldset">
+        <legend class="write__legend">Напишите нам</legend>
+        <div class="write__wrapper">
+          <label class="write__label write__label_name">Ваше имя:
+            <input class="write__input" type="text" name="username" placeholder="Имя Фамилия">
+          </label>
+          <label class="write__label write__label_email">Ваш e-mail:
+            <input class="write__input" type="email" name="email" placeholder="email@example.com">
+          </label>
+        </div>
+        <label class="write__label write__label_textarea">Текст письма:
+          <textarea class="write__textarea" name="message" placeholder="В свободной форме"></textarea>
+        </label>
+        <p class="write__error">Пожалуйста, заполните все поля формы!</p>
+        <button class="button modal__button" type="submit">Отправить</button>
+        
+      </fieldset>
+    </form>
+    <button class="modal__close" type="button" aria-label="Закрыть"></button>
+  </section>
+  <script src="js/popup.js"></script> 
+  <script src="js/slider.js"></script>   
+</body>
+</html>
