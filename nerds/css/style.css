@@ -137,13 +137,12 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 /* end of layout settings */
 
 
 /* Header */
 .header {
-  min-width: 1200px;
+  min-width: 1160px;
 
   background-color: #eee;
 }
@@ -625,7 +624,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* Contacts */
 .main__contacts {
-  min-width: 1200px;
+  min-width: 1160px;
   margin-top: 80px;
 }
 
@@ -795,7 +794,7 @@ input[type=number]::-webkit-outer-spin-button {
 /* Страница «МАГАЗИН» */
 /* Title */
 .main__title {
-  min-width: 1200px;
+  min-width: 1160px;
   margin: 0;
   padding-top: 72px;
   padding-bottom: 108px;
