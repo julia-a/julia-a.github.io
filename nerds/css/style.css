@@ -504,20 +504,12 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .statistics__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
   margin-right: 17px;
 }
 
 .statistics__item:last-child {
   margin-right: 0;
 }
-
 
 .statistics__heading {
   margin-top: 10px;
