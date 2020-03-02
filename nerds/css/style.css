@@ -12,6 +12,8 @@ html {
 }
 
 body {
+  min-width: 1200px;
+
   font-style: normal;
   font-size: 16px;
   font-weight: 400;
@@ -137,9 +139,7 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 /* end of layout settings */
-
 
 /* Header */
 .header {
@@ -224,7 +224,6 @@ input[type=number]::-webkit-outer-spin-button {
 
   background-color: #fb565a;
 }
-
 
 .menu__link_cart {
   position: relative;
@@ -590,7 +589,6 @@ input[type=number]::-webkit-outer-spin-button {
   left: 10px;
 }
 
-
 .partners__img {
   opacity: 0.2;
 }
@@ -851,9 +849,7 @@ input[type=number]::-webkit-outer-spin-button {
   position: relative;
 
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -928,7 +924,6 @@ input[type=number]::-webkit-outer-spin-button {
   width: 80px;
   padding: 10px 5px;
   margin-left: 10px;
-
 
   font-size: 16px;
   text-align: center;
@@ -1414,6 +1409,7 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 4px;
 }
 
+/* Изменение цвета текста для placeholder в форме */
 .write input::-webkit-input-placeholder,
 .write textarea::-webkit-input-placeholder {
   color: rgba(68, 68, 68, 0.5);
@@ -1480,7 +1476,6 @@ input[type=number]::-webkit-outer-spin-button {
 .write__error_show {
   display: block;
 }
-
 
 .modal__button {
   margin-top: 40px;
