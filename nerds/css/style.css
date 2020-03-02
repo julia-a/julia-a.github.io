@@ -69,7 +69,8 @@ a {
   cursor: pointer;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: #e74246;
 }
 
@@ -84,7 +85,8 @@ a {
   background-color: #00ca74;
 }
 
-.button_green:hover {
+.button_green:hover,
+.button_green:focus {
   background-color: #00bc6c;
 }
 
@@ -96,7 +98,8 @@ a {
   background-color: #efc84a;
 }
 
-.button_yellow:hover {
+.button_yellow:hover,
+.button_yellow:focus {
   background-color: #eab534;
 }
 
@@ -109,7 +112,8 @@ a {
   background-color: #eee;
 }
 
-.button_grey:hover {
+.button_grey:hover,
+.button_grey:focus {
   background-color: #dfdfdf;
 }
 
@@ -162,7 +166,8 @@ input[type=number]::-webkit-outer-spin-button {
   margin-right: 178px;
 }
 
-.logo[href]:hover {
+.logo[href]:hover,
+.logo[href]:focus {
   opacity: 0.8;
 }
 
@@ -202,12 +207,12 @@ input[type=number]::-webkit-outer-spin-button {
   color: black;
 }
 
-.menu__link:hover,
-.menu__link:focus {
+.menu__link[href]:hover,
+.menu__link[href]:focus {
   color: #fb565a;
 }
 
-.menu__link:active {
+.menu__link[href]:active {
   color: black;
 
   opacity: 0.3;
@@ -589,15 +594,16 @@ input[type=number]::-webkit-outer-spin-button {
   left: 10px;
 }
 
-.partners__img {
+.partners__link {
   opacity: 0.2;
 }
 
-.partners__img:hover {
+.partners__link:hover,
+.partners__link:focus {
   opacity: 1;
 }
 
-.partners__img:active {
+.partners__link:active {
   opacity: 0.1;
 }
 
@@ -773,7 +779,8 @@ input[type=number]::-webkit-outer-spin-button {
   background-image: url(../img/svg/insta-icon.svg);
 }
 
-.socials__link:hover {
+.socials__link:hover,
+.socials__link:focus {
   background-color: #e74246;
 }
 
@@ -1050,11 +1057,12 @@ input[type=number]::-webkit-outer-spin-button {
   opacity: 0.3;
 }
 
-.sorting__link:hover {
+.sorting__link[href]:hover,
+.sorting__link[href]:focus {
   opacity: 0.6;
 }
 
-.sorting__link:active,
+.sorting__link[href]:active,
 .sorting__link_current {
   opacity: 1;
 }
@@ -1113,7 +1121,8 @@ input[type=number]::-webkit-outer-spin-button {
   opacity: 0.12;
 }
 
-.catalog__item:hover::before {
+.catalog__item:hover::before,
+.catalog__item:focus:before {
   opacity: 1;
 }
 
@@ -1224,11 +1233,12 @@ input[type=number]::-webkit-outer-spin-button {
   padding-right: 78px;
 }
 
-.pagination__link:hover {
+.pagination__link[href]:hover,
+.pagination__link[href]:focus {
   background-color: #dfdfdf;
 }
 
-.pagination__link:active {
+.pagination__link[href]:active {
   background-color: #d5d5d5;
   -webkit-box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
@@ -1522,7 +1532,8 @@ input[type=number]::-webkit-outer-spin-button {
   transform: rotate(-45deg);
 }
 
-.modal__close:hover {
+.modal__close:hover,
+.modal__close:focus {
   opacity: 1;
 }
 
