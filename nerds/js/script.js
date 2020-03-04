@@ -13,18 +13,15 @@ var writeError = document.querySelector(".write__error");
 var isStorageSupport = true;
 var storage = "";
 
-
 try {
   storage = localStorage.getItem("username");
 } catch (err) {
   isStorageSupport = false;
 }
 
-
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal__show");
-
   if (storage) {
     username.value = storage;
     message.focus();

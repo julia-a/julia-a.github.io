@@ -143,6 +143,7 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 /* end of layout settings */
 
 /* Header */
@@ -365,34 +366,47 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .services__item {
+  width: 300px;
+  margin-right: 100px;
+}
+
+.services__item {
   position: relative;
 
   width: 300px;
   margin-right: 100px;
-  padding-top: 147px;
-
-  background-repeat: no-repeat;
+  padding-top: 146px;
 }
 
 .services__item::before {
   content: "";
 
   position: absolute;
+  top: 0;
+  left: 0;
 
   width: 300px;
   height: 146px;
+
+  background-repeat: no-repeat;
 }
 
-.services__item_web {
+.services__item_web::before {
+  background-color: #fb565a;
   background-image: url("../img/illustration-1.jpg");
 }
 
-.services__item_app {
+.services__item_app::before {
+  background-color: #00ca74;
   background-image: url("../img/illustration-2.jpg");
 }
 
 .services__item_ppt {
   margin-right: 0;
+}
+
+.services__item_ppt::before {
+  background-color: #efc84a;
   background-image: url("../img/illustration-3.jpg");
 }
 
@@ -632,7 +646,7 @@ input[type=number]::-webkit-outer-spin-button {
 .contacts__map {
   position: relative;
   z-index: 2;
-  
+
   width: 100%;
   height: 416px;
 
@@ -683,13 +697,13 @@ input[type=number]::-webkit-outer-spin-button {
 
 .contacts__button {
   margin-top: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 44px;
+  padding-right: 44px;
 }
 
 /* Footer */
 .footer__socials {
-  margin: 70px 0;
+  margin: 60px 0;
 }
 
 .socials {
@@ -710,11 +724,12 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-right: 145px;
+  margin-right: 140px;
 }
 
 .socials__text {
   margin: 0;
+  margin-top: 10px;
   font-size: 36px;
   font-weight: 700;
   line-height: 1;
@@ -728,7 +743,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .socials__item {
-  margin-right: 10px;
+  margin-right: 13px;
 }
 
 .socials__item:last-child {
@@ -798,7 +813,7 @@ input[type=number]::-webkit-outer-spin-button {
   padding-bottom: 108px;
   padding-left: calc((100% - 1160px)/2);
   padding-right: calc((100% - 1160px)/2);
-  
+
   background-color: #eee;
 }
 
@@ -949,7 +964,7 @@ input[type=number]::-webkit-outer-spin-button {
 .selector__label {
   position: relative;
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   padding-left: 35px;
 }
 
@@ -1129,6 +1144,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .catalog__img {
   padding-top: 40px;
+  vertical-align: bottom;
 }
 
 .catalog__item:hover {
@@ -1146,8 +1162,8 @@ input[type=number]::-webkit-outer-spin-button {
 
   display: none;
   width: 100%;
-  min-height: 231px;
-  padding: 35px 65px;
+  min-height: 230px;
+  padding: 43px 65px;
 
   text-align: center;
 
@@ -1175,8 +1191,13 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .description__text {
+  max-height: 360px;
+  margin-bottom: 40px;
+
   line-height: 18px;
   color: #666666;
+
+  overflow-y: auto;
 }
 
 .description__button {
