@@ -366,15 +366,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .services__item {
-  width: 300px;
-  margin-right: 100px;
-}
-
-.services__item {
   position: relative;
 
   width: 300px;
   margin-right: 100px;
+  margin-bottom: 50px;
   padding-top: 146px;
 }
 
@@ -419,7 +415,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .services__text {
   padding-right: 25px;
-  margin-top: -7px;
+  margin-top: -6px;
 
   line-height: 1.5;
   color: #283136;
@@ -520,7 +516,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .statistics__item {
-  margin-right: 17px;
+  margin-right: 20px;
 }
 
 .statistics__item:last-child {
@@ -543,10 +539,14 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: left;
 }
 
+.statistics__desc sup {
+  font-size: 28px;
+}
+
 /* Partners */
 .main__partners {
   padding-top: 48px;
-  padding-bottom: 35px;
+  padding-bottom: 37px;
 
   border-top: 2px solid #eee;
   border-bottom: 2px solid #eee;
@@ -619,11 +619,18 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .partners__link_academy {
-  margin-left: -22px;
+  margin-top: 5px;
+  margin-left: -30px;
+}
+
+.partners__link_borodinski {
+  margin-top: -3px;
+  margin-left: -10px;
 }
 
 .partners__link_pink {
-  margin-left: 15px;
+  margin-top: -5px;
+  margin-left: 10px;
 }
 
 .partners__link_mishka {
@@ -673,7 +680,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .contacts__title {
-  margin-top: 5px;
+  margin-top: 7px;
   font-size: 18px;
   font-weight: 700;
   line-height: 25px;
@@ -681,7 +688,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .contacts__address {
-  margin: 30px 0 0 0;
+  margin: 25px 0 0 0;
 }
 
 .contacts__address,
@@ -744,6 +751,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .socials__item {
   margin-right: 13px;
+  margin-bottom: 30px;
 }
 
 .socials__item:last-child {
@@ -774,25 +782,29 @@ input[type=number]::-webkit-outer-spin-button {
   background-repeat: no-repeat;
 }
 
+.socials__link:active::after {
+  opacity: 0.3;
+}
+
 .socials__link_vk::after {
   width: 26px;
   height: 15px;
 
-  background-image: url(../img/svg/vk-icon.svg);
+  background-image: url("../img/svg/vk-icon.svg");
 }
 
 .socials__link_fb::after {
   width: 12px;
   height: 22px;
 
-  background-image: url(../img/svg/fb-icon.svg);
+  background-image: url("../img/svg/fb-icon.svg");
 }
 
 .socials__link_insta::after {
   width: 21px;
   height: 21px;
 
-  background-image: url(../img/svg/insta-icon.svg);
+  background-image: url("../img/svg/insta-icon.svg");
 }
 
 .socials__link:hover,
@@ -802,7 +814,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .socials__link:active {
   background-color: #d7373b;
-  opacity: 0.3;
 }
 
 /* Страница «МАГАЗИН» */
@@ -935,6 +946,7 @@ input[type=number]::-webkit-outer-spin-button {
 .controls__label {
   display: inline-block;
   width: 50%;
+  vertical-align: middle;
 
   font-size: 16px;
 }
@@ -982,11 +994,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .selector__label_radio::before {
-  background-image: url(../img/svg/radio-off.svg);
+  background-image: url("../img/svg/radio-off.svg");
 }
 
 .selector__label_checkbox::before {
-  background-image: url(../img/svg/checkbox-off.svg);
+  background-image: url("../img/svg/checkbox-off.svg");
 }
 
 .selector__input:not(:disabled):hover+.selector__label::before,
@@ -996,11 +1008,11 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* Состояния для радиокнопки и чекбокса */
 .selector__input:checked+.selector__label_radio::before {
-  background-image: url(../img/svg/radio-on.svg);
+  background-image: url("../img/svg/radio-on.svg");
 }
 
 .selector__input:checked+.selector__label_checkbox::before {
-  background-image: url(../img/svg/checkbox-on.svg);
+  background-image: url("../img/svg/checkbox-on.svg");
 }
 
 .selector__input:disabled+.selector__label::before {
@@ -1054,7 +1066,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .sorting__item {
-  margin-right: 25px;
+  margin-right: 24px;
 }
 
 .sorting__item:last-child {
@@ -1062,7 +1074,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .sorting__item_direction {
-  margin-right: 18px;
+  margin-right: 16px;
 }
 
 .sorting__link {
@@ -1097,12 +1109,12 @@ input[type=number]::-webkit-outer-spin-button {
   width: 12px;
   height: 14px;
 
-  background-image: url(../img/svg/icon-down-dir.svg);
+  background-image: url("../img/svg/icon-down-dir.svg");
   background-repeat: no-repeat;
 }
 
 .link-direction_up {
-  background-image: url(../img/svg/icon-up-dir.svg);
+  background-image: url("../img/svg/icon-up-dir.svg");
 }
 
 .catalog__list {
@@ -1121,7 +1133,7 @@ input[type=number]::-webkit-outer-spin-button {
   position: relative;
 
   width: 360px;
-  margin-bottom: 26px;
+  margin-bottom: 33px;
 }
 
 .catalog__item::before {
@@ -1210,7 +1222,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* Pagination */
 .catalog__pagination {
-  margin-top: 30px;
+  margin-top: 27px;
 }
 
 .pagination {
